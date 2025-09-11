@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Formulario to guapo</title>
+    <meta charset=”utf-8” />
+</head>
+
+<body style="background-color: grey;">
+    <form action="http://193.147.87.202/procesaform.php" method="post" enctype="multipart/form-data">
+        <!-- TITULO -->
+        <h1 style="color:blue">FORMULARIO</h1>
+        <!-- NOMBRE -->
+        <h3 style="color:orange">Inserte su usuario:</h3><br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="Nombre" size="40" value="default" />
+        <!-- CONTRASEÑA -->
+        <br>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="contraseña" size="40" name="Contraseña:" value="default" />
+        <!-- CHECKBOX -->
+        <h3 style="color:orange">Seleccione varios:</h2><br>
+            <label for="htmlcb">HTML</label>
+            <input type="checkbox" id="htmlcb" name="lenguaje[]" value="html">
+            <br>
+            <label for="javascriptcb">JavaScript</label>
+            <input type="checkbox" id="javascriptcb" name="lenguaje[]" value="javascript">
+            <br>
+            <label for="csscb">CSS</label>
+            <input type="checkbox" id="csscb" name="lenguaje[]" value="css">
+            <br>
+            <label for="xmlcb">XML</label>
+            <input type="checkbox" id="xmlcb" name="lenguaje[]" value="xml">
+            <br>
+            <!-- RADIO -->
+            <h3 style="color:orange">Seleccione su rango de edad:</h3><br>
+            <label for="menos18">Menor de 18 </label>
+            <input type="radio" id="menos18" value="menos18" name="edad" />
+            <br>
+            <label for="18a30">Entre 18 y 30</label>
+            <input type="radio" id="18a30" value="18a30" name="edad" />
+            <br>
+            <label for="31a50">Entre 31 y 50</label>
+            <input type="radio" id="31a50" value="31a50" name="edad" />
+            <br>
+            <label for="mas50">Más de 50</label>
+            <input type="radio" id="mas50" value="mas50" name="edad" />
+            <br>
+            <h3 style="color:orange">Seleccione su continente de nacimiento:</h3><br>
+            <label for="continente">Continente -></label>
+            <select id="continente" name="Continente">
+                <option selected="selected">Europa</option>
+                <option>Asia</option>
+                <option>America</option>
+                <option>Australia</option>
+                <option>Africa</option>
+            </select>
+            <h3 style="color:orange">Inserte el fichero con el que trabajaras:</h3><br>
+            <input type="file" id="identificador" value="valor" name="nombre" />
+            <br><br>
+            <button name="Enviar" style="color:aqua" id="enviar" type="submit" value="enviar">ENVIAR</button>
+    </form>
+</body>
+</html>
